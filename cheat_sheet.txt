@@ -9,3 +9,10 @@ git log
 git log -p
 
 git config --global core.editor "code --wait"
+
+
+#Creates a new branch locally then pushes it.
+
+git checkout -b $branchname
+git push origin $branchname --set-upstream
+
