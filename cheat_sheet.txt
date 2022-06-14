@@ -5,7 +5,6 @@ git add .
 git commit -m "A message describing what I have done to make this snapshot different"
 
 git status
-git log
 git log -p
 
 git config --global core.editor "code --wait"
