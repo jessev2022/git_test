@@ -1,18 +1,21 @@
-git clone git@github.com:USER-NAME/REPOSITORY_NAME.git
-git push or git push origin main
-
-git add .
-git commit -m "A message describing what I have done to make this snapshot different"
-
-git status
-git log
-git log -p
-
-git config --global core.editor "code --wait"
-
-
 #Creates a new branch locally then pushes it.
 
 git checkout -b $branchname
 git push origin $branchname --set-upstream
+
+#Getting from remote
+
+git fetch origin
+git checkout --track origin/$branchname
+
+#Delete local remote-tracking branches
+#Deletes origin/* branches in your local copy. Doesn't affect the remote.
+
+git remote prune origin
+
+#List existing branches
+#Existing branches are listed. Current branch will be highlighted with an asterisk.
+
+git branch --list
+
 
